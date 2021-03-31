@@ -1,8 +1,12 @@
 # How to deploy AWX in microk8s
 
-## Install microk8s
-https://ubuntu.com/kubernetes/install#single-node
+## What you’ll need (not tested with other microk8s specifications)
+- An Ubuntu 20.04 LTS environment to run the commands
+- At least 60G of disk space and 8G of memory are recommended
+- An internet connection
 
+## Install microk8s
+https://microk8s.io/docs
 
 ```
 sudo snap install microk8s --classic
