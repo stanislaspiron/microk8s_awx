@@ -108,3 +108,8 @@ token=$(microk8s.kubectl -n kube-system get secret | grep default-token | cut -d
 microk8s.kubectl -n kube-system describe secret $token
 ```
 
+## Addtionnal informations
+When this procedure was written, following version was installed
+
+- microk8s : v1.20
+- awx : 18.0.0
