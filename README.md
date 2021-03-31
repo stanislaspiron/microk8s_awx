@@ -11,8 +11,8 @@ sudo snap install microk8s --classic
 Add required user rights to execute microk8s commands.
 
 ```
-sudo usermod -a -G microk8s stanislas
-sudo chown -f -R stanislas ~/.kube
+sudo usermod -a -G microk8s ${USER}
+sudo chown -f -R ${USER} ~/.kube
 ```
 logout and log in again
 
@@ -44,7 +44,7 @@ kind: AWX
 metadata:
   name: tower
 spec:
-  tower_hostname: tower.demo.local
+  tower_hostname: tower.demo.local <<< Change this hostname
   tower_admin_user: admin
   tower_ingress_type: Ingress
   tower_ingress_annotations: |
@@ -56,7 +56,7 @@ metadata:
   name: tower-admin-password
   namespace: default
 stringData:
-  password: "admin@F5demo.com"
+  password: "MySuperLongPassword"
 ```
 
 Install AWX from file
@@ -79,7 +79,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: microk8s.demo.local
+  - host: microk8s.demo.local <<< Change this hostname
     http:
       paths:
       - path: /
