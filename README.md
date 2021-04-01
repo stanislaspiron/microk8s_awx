@@ -14,9 +14,9 @@
  
 # AWX custom Execution environment
 
-1. [create EE image](a.md)
+1. [create EE image](ansible-ee-building.md)
 1. [Install AWX](awx_install.md)
-1. [Optional : configure dashboard ingress](dashboard_install.md)
+
 
 
 ## Addtionnal informations
