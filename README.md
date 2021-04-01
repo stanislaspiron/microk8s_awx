@@ -15,7 +15,7 @@
 # AWX custom Execution environment
 
 1. [create EE image](ansible-ee-building.md)
-1. [Install AWX](awx_install.md)
+1. [Configure AWX to use custom EE](awx-ee.md)
 
 
 
