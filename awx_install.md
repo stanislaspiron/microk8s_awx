@@ -5,6 +5,8 @@ kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/de
 
 ## Install AWX
 AWX declaration file (awx.yaml)
+
+*Change tower_hostname before apply*
 ```
 ---
 apiVersion: awx.ansible.com/v1beta1
@@ -12,7 +14,7 @@ kind: AWX
 metadata:
   name: tower
 spec:
-  tower_hostname: tower.demo.local <<< Change this hostname
+  tower_hostname: tower.demo.local
   tower_admin_user: admin
   tower_ingress_type: Ingress
   tower_ingress_annotations: |
