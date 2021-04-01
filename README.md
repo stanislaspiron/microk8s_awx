@@ -14,7 +14,7 @@
  
 # AWX custom Execution environment
 
-1. [create EE image](ansible-ee-building.md)
+1. [create EE image and push to microk8s registry](ansible-ee-building.md)
 1. [Configure AWX to use custom EE](awx-ee.md)
 
 
