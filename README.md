@@ -11,7 +11,11 @@
 1. [Install microk8s](microk8s_install.md)
 1. [Install AWX](awx_install.md)
 1. [Optional : configure dashboard ingress](dashboard_install.md)
- 
+
+Debug:
+- If you can't authenticate, you can [manage AWX account](awx_account_management.md)
+- If your microk8s is behind a proxy, you must configure proxy configuration
+
 # AWX custom Execution environment
 
 1. [create EE image and push to microk8s registry](ansible-ee-building.md)
