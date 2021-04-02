@@ -31,7 +31,7 @@ awx-cli receive -u admin -p $PASSWORD_OLD -h $AWX_OLD --workflow all > workflow.
 ### Set variables
 ```
 AWX_NEW=https://tower.demo.local
-PASSWORD_NEW='myOldPassword'
+PASSWORD_NEW='myNewPassword'
 ```
 
 ### Import configuration files to new AWX
