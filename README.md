@@ -11,6 +11,7 @@
 1. [Install microk8s](microk8s_install.md)
 1. [Install AWX](awx_install.md)
 1. [Optional : configure dashboard ingress](dashboard_install.md)
+2. [Optional : export / import configuration from existing AWX](awx_migrate.md)
 
 Debug:
 - If you can't authenticate, you can [manage AWX account](awx_account_management.md)
