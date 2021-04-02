@@ -14,7 +14,7 @@
 
 Debug:
 - If you can't authenticate, you can [manage AWX account](awx_account_management.md)
-- If your microk8s is behind a proxy, you must configure proxy configuration
+- If your microk8s is behind a proxy, you must [configure proxy configuration](microk8s_proxy.md)
 
 # AWX custom Execution environment
 
