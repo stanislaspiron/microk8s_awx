@@ -8,19 +8,19 @@
 
 # Microk8s installation with AWX
 
-1. [Install microk8s](microk8s_install.md)
-1. [Install AWX](awx_install.md)
-1. [Optional : configure dashboard ingress](dashboard_install.md)
-2. [Optional : export / import configuration from existing AWX](awx_migrate.md)
+1. [Install microk8s](microk8s/microk8s_install.md)
+1. [Install AWX](awx/awx_install.md)
+1. [Optional : configure dashboard ingress](microk8s/dashboard_install.md)
+2. [Optional : export / import configuration from existing AWX](awx/awx_migrate.md)
 
 Debug:
-- If you can't authenticate, you can [manage AWX account](awx_account_management.md)
-- If your microk8s is behind a proxy, you must [configure proxy configuration](microk8s_proxy.md)
+- If you can't authenticate, you can [manage AWX account](awx/awx_account_management.md)
+- If your microk8s is behind a proxy, you must [configure proxy configuration](microk8s/microk8s_proxy.md)
 
 # AWX custom Execution environment
 
-1. [create EE image and push to microk8s registry](ansible-ee-building.md)
-1. [Configure AWX to use custom EE](awx-ee.md)
+1. [create EE image and push to microk8s registry](EE/ansible-ee-building.md)
+1. [Configure AWX to use custom EE](EE/awx-ee.md)
 
 
 
