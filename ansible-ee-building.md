@@ -3,6 +3,7 @@ The goal is to create dedicated Execution Environment to use in AWX version 18.0
 The following procedure describe how to create EE image and push to microk8s registry for lab purpose.
 
 ## First time configuration
+Source : https://microk8s.io/docs/registry-built-in
 ### **Host : microk8s**
 start container registry on microk8s
 ```
