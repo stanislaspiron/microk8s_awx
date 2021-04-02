@@ -38,6 +38,7 @@ sudo systemctl restart docker
 ```
 
 ## Execution environment container creation
+Source: https://www.ansible.com/blog/introduction-to-ansible-builder
 ### **Host : Image builder host**
 prepare directory for building
 ```
