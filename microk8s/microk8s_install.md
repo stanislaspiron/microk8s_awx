@@ -23,6 +23,7 @@ Install microk8s addons
 - **storage** to support persistent volume for database persistence
 - **ingress** to install nginx ingress controller to publish services outside kubernetes
 - **dashboard** to display the kubernetes dashboard (optional)
+- **registry** to store container images locally (optional, useful to store built images)
 ```
-microk8s enable dns storage ingress dashboard
+microk8s enable dns:192.168.1.1 storage ingress dashboard
 ````
