@@ -67,6 +67,13 @@ collections:
 EOF
 ```
 
+create python modules requirements file
+```
+cat <<EOF > pip3_requirements.txt
+dnspython
+EOF
+```
+
 Build container with docker (podman failed to create image because of /usr rights)
 ```
 ansible-builder build --tag microk8s.demo.local:32000/awx-ee-f5:1.0.0 --context ./context --container-runtime docker
