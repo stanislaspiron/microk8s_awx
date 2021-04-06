@@ -52,6 +52,9 @@ cat <<EOF > execution-environment.yml
 version: 1
 dependencies:
   galaxy: requirements.yml
+additional_build_steps:
+  prepend: |
+    RUN pip3 install --upgrade pip setuptools
 EOF
 ```
 create collections requirements file
