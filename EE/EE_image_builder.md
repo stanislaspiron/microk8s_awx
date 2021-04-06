@@ -59,6 +59,7 @@ cat <<EOF > requirements.yml
 collections:
 # With just the collection name
 - f5networks.f5_modules
+- community.general
 EOF
 ```
 
