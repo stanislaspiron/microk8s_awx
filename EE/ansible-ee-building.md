@@ -52,9 +52,7 @@ cat <<EOF > execution-environment.yml
 version: 1
 dependencies:
   galaxy: requirements.yml
-additional_build_steps:
-  prepend: |
-    RUN pip3 install -r pip3_requirements.txt
+  python: requirements.txt
 EOF
 ```
 create collections requirements file
@@ -69,7 +67,7 @@ EOF
 
 create python modules requirements file
 ```
-cat <<EOF > pip3_requirements.txt
+cat <<EOF > requirements.txt
 dnspython
 EOF
 ```
