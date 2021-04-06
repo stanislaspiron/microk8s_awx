@@ -54,7 +54,7 @@ dependencies:
   galaxy: requirements.yml
 additional_build_steps:
   prepend: |
-    RUN pip3 install --upgrade pip setuptools
+    RUN pip3 install -r pip3_requirements.txt
 EOF
 ```
 create collections requirements file
