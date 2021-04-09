@@ -16,6 +16,8 @@ metadata:
 spec:
   tower_hostname: tower.demo.local
   tower_admin_user: admin
+  tower_image: quay.io/ansible/awx:19.0.0
+  tower_image_pull_policy: Always
   tower_ingress_type: Ingress
   tower_ingress_annotations: |
       kubernetes.io/ingress.class: public
