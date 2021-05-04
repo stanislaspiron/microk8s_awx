@@ -11,16 +11,10 @@ microk8s enable registry
 ```
 
 ### **Host : Image builder host**
-In my configuration, image buider is installed in a dedicated host.
+In my configuration, docker is installed in a dedicated host.
 
 System Requirement :
 - docker
-- pip3
-
-Install ansible builder
-```
-pip3 install ansible-builder
-```
 
 Allow HTTP service for registry in docker host. we can define hostname or IP address.
 ```
