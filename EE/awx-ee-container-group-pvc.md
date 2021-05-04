@@ -14,7 +14,7 @@ kubectl apply -f awx-ee-pvc.yml
 
 ![image](https://user-images.githubusercontent.com/39823762/113328999-4cfe4900-931d-11eb-8e21-ce01c320589f.png)
 
-Select **Customize pod specification** and change container image with :
+Select **Customize pod specification** and change container image with (change image name with expected image):
 
 ```
 apiVersion: v1
