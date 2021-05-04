@@ -20,12 +20,12 @@ Debug:
 # AWX custom Execution environment
 
 1. [create EE image and push to microk8s registry](EE/ansible-ee-building.md)
-1. [Configure AWX to use custom EE](EE/awx-ee.md)
-
+1. [Configure AWX to use custom EE](EE/awx-ee-container-group.md)
+1. [Configure AWX EE with persistent volume](EE/awx-ee-container-group-pvc.md)
 
 
 ## Addtionnal informations
 When this procedure was written, following version was installed
 
 - microk8s : v1.20
-- awx : 18.0.0
+- awx : 19.1.0
