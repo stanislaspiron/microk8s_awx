@@ -1,0 +1,5 @@
+---
+collections:
+# With just the collection name
+- f5networks.f5_modules
+- community.general
