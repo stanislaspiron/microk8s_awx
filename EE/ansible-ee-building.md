@@ -42,18 +42,23 @@ Source: https://www.ansible.com/blog/introduction-to-ansible-builder
 ### **Host : Image builder host**
 prepare directory for building
 ```
-mkdir awx-ee-f5
-cd awx-ee-f5/
+mkdir awx-ee-custom
+cd awx-ee-custom/
 ```
 Create EE specifications file
 ```
-cat <<EOF > execution-environment.yml
----
-version: 1
-dependencies:
-  galaxy: requirements.yml
-  python: requirements.txt
-EOF
+cat <<EOF > Dockerfile
+FROM quay.io/ansible/awx-ee:0.1.1
+
+USER root
+
+ADD requirements.yml /tmp/requirements.yml
+ADD requirements.txt /tmp/requirements.txt
+
+RUN ansible-galaxy collection install -r /tmp/requirements.yml --collections-path /usr/share/ansible/collections
+RUN pip --disable-pip-version-check install -r /tmp/requirements.txt  # for any Python modules the collections didn't pull in
+
+USER 1000
 ```
 create collections requirements file
 ```
@@ -62,6 +67,7 @@ cat <<EOF > requirements.yml
 collections:
 # With just the collection name
 - f5networks.f5_modules
+- community.general
 EOF
 ```
 
@@ -74,10 +80,10 @@ EOF
 
 Build container with docker (podman failed to create image because of /usr rights)
 ```
-ansible-builder build --tag microk8s.demo.local:32000/awx-ee-f5:1.0.0 --context ./context --container-runtime docker
+docker push microk8s.demo.local:32000/awx-ee-custom:1.1.0
 ```
 
 push image to microk8s registry
 ```
-docker push microk8s.demo.local:32000/awx-ee-f5
+docker push microk8s.demo.local:32000/awx-ee-custom
 ```
