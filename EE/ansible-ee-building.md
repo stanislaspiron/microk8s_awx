@@ -80,7 +80,11 @@ EOF
 
 Build container with docker (podman failed to create image because of /usr rights)
 ```
-docker push microk8s.demo.local:32000/awx-ee-custom:1.1.0
+docker build -t microk8s.demo.local:32000/awx-ee-custom:1.1.0 .
+```
+Optional parameters to support proxy (apt command requires lowercase variable names)
+```
+--build-arg "HTTP_PROXY=$HTTP_PROXY" --build-arg "HTTPS_PROXY=$HTTPS_PROXY"  --build-arg "http_proxy=$HTTP_PROXY" --build-arg "https_proxy=$HTTPS_PROXY"
 ```
 
 push image to microk8s registry
