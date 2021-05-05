@@ -5,17 +5,10 @@ metadata:
   name: tower
 spec:
   tower_hostname: tower.demo.local
-  tower_image: quay.io/ansible/awx:19.0.0
+  tower_image: quay.io/ansible/awx
+  tower_image_version: 19.1.0
   tower_image_pull_policy: Always
   tower_admin_user: admin
   tower_ingress_type: Ingress
   tower_ingress_annotations: |
       kubernetes.io/ingress.class: public
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: tower-admin-password
-  namespace: default
-stringData:
-  password: "admin@F5demo.com"
