@@ -21,4 +21,6 @@ kubectl apply -f deployment.yml
 kubectl apply -f storageclass.yml
 ```
 
-Source : https://medium.com/@myte/kubernetes-nfs-and-dynamic-nfs-provisioning-97e2afb8b4a9
+Source : 
+- https://medium.com/@myte/kubernetes-nfs-and-dynamic-nfs-provisioning-97e2afb8b4a9
+- https://tuananh.org/2020/05/01/using-synology-nfs-as-external-storage-with-k8s/
