@@ -1,7 +1,5 @@
 # Configure Dynamic NFS storage Class
 
-Source : https://medium.com/@myte/kubernetes-nfs-and-dynamic-nfs-provisioning-97e2afb8b4a9
-
 **Create RBAC roles to configure persistent volumes**
 
 ```
@@ -22,3 +20,5 @@ kubectl apply -f deployment.yml
 ```
 kubectl apply -f storageclass.yml
 ```
+
+Source : https://medium.com/@myte/kubernetes-nfs-and-dynamic-nfs-provisioning-97e2afb8b4a9
