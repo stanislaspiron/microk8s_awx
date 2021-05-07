@@ -1,6 +1,6 @@
 # Install microk8s
 Source : https://microk8s.io/docs
-
+## Install microk8s core
 ```
 sudo snap install microk8s --classic
 ```
@@ -18,14 +18,14 @@ Add alias for kubectl
 sudo snap alias microk8s.kubectl kubectl
 ```
 
-Install microk8s addons
+## Install microk8s addons
 - **dns** to support communication between pods (postgre is a dedicated pod)
 ```
 microk8s enable dns:192.168.1.1
 ```
 - **storage** to support local storage for database persistent volume
 ```
-microk8s enablestorage
+microk8s enable storage
 ```
 - **ingress** to install nginx ingress controller to publish services outside kubernetes
 ```
