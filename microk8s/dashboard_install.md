@@ -1,6 +1,6 @@
 
 ## Configure dashboard ingress
-dashboard ingress declaration (dashboard-ingress.yaml)
+dashboard ingress declaration (dashboard-ingress.yml)
 
 *Change hostname before apply*
 ```
@@ -30,7 +30,7 @@ spec:
 Install dashboard ingress from file
 
 ```
-kubectl apply -f dashboard-ingress.yaml
+kubectl apply -f dashboard-ingress.yml
 ```
 
 get token to authenticate to dashboard
