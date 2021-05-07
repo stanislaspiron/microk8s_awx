@@ -1,6 +1,6 @@
 
 ## Configure dashboard ingress
-dashboard ingress declaration (dashboard-ingress.yml)
+[dashboard ingress declaration](dashboard-ingress.yml)
 
 *Change hostname before apply*
 ```
