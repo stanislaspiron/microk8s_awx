@@ -28,4 +28,7 @@ Debug:
 When this procedure was written, following version was installed
 
 - microk8s : v1.20
-- awx : 19.1.0
+- awx : 
+  - 18.0.0
+  - 19.0.0
+  - 19.1.0
