@@ -20,10 +20,26 @@ sudo snap alias microk8s.kubectl kubectl
 
 Install microk8s addons
 - **dns** to support communication between pods (postgre is a dedicated pod)
-- **storage** to support persistent volume for database persistence
+```
+microk8s enable dns:192.168.1.1
+```
+- **storage** to support local storage for database persistent volume
+```
+microk8s enablestorage
+```
 - **ingress** to install nginx ingress controller to publish services outside kubernetes
+```
+microk8s enable ingress
+```
+- **metallb** to install metalLB loadbalancer with VIP range 192.168.1.200 - 192.168.1.210
+```
+microk8s enable metallb:192.168.1.200-192.168.1.210
+```
 - **dashboard** to display the kubernetes dashboard (optional)
+```
+microk8s enable dashboard
+```
 - **registry** to store container images locally (optional, useful to store built images)
 ```
-microk8s enable dns:192.168.1.1 storage ingress dashboard
-````
+microk8s enable registry
+```
