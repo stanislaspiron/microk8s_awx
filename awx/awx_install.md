@@ -1,8 +1,11 @@
 ## Install AWX operator
+
 ```
-kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml
+kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/0.9.0/deploy/awx-operator.yaml
 ````
 Note: This command line can change according to [awx-operator github](https://github.com/ansible/awx-operator)
+  current operator version is 0.9.0 (defined in URL above)
+
 ## Install AWX
 [AWX declaration file](awx.yml)
 
@@ -35,13 +38,14 @@ stringData:
   password: "MySuperLongPassword"
 ```
 
-Install AWX from file
-
-```
-kubectl apply -f awx.yml
-```
 Install secret from file
 
 ```
 kubectl apply -f secret.yml
+```
+
+Install AWX from file
+
+```
+kubectl apply -f awx.yml
 ```
