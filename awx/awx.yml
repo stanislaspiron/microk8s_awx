@@ -4,11 +4,11 @@ kind: AWX
 metadata:
   name: tower
 spec:
-  tower_hostname: tower.demo.local
-  tower_image: quay.io/ansible/awx
-  tower_image_version: 19.1.0
-  tower_image_pull_policy: Always
-  tower_admin_user: admin
-  tower_ingress_type: Ingress
-  tower_ingress_annotations: |
+  hostname: tower.demo.local
+  image: quay.io/ansible/awx
+  image_version: latest
+  image_pull_policy: Always
+  admin_user: admin
+  ingress_type: Ingress
+  ingress_annotations: |
       kubernetes.io/ingress.class: public
