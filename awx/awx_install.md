@@ -1,10 +1,11 @@
 ## Install AWX operator
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/0.9.0/deploy/awx-operator.yaml
+kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/0.11.0/deploy/awx-operator.yaml
 ````
 Note: This command line can change according to [awx-operator github](https://github.com/ansible/awx-operator)
-  current operator version is 0.9.0 (defined in URL above)
+  current operator version is 0.11.0 (defined in URL above)
+  Starting with operator 0.11.0, *tower_* prefix is removed from all parameters
 
 ## Install AWX
 [AWX declaration file](awx.yml)
