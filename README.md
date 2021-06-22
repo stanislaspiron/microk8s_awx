@@ -32,6 +32,7 @@ When this procedure was written, following version was installed
 
 - microk8s : v1.20
 - awx : 
-  - 18.0.0
-  - 19.0.0
-  - 19.1.0
+  - 18.0.0 (requires operator 0.7.0, awx.yml file format changed since operator 0.11.0)
+  - 19.0.0 (requires operator 0.8.0, awx.yml file format changed since operator 0.11.0)
+  - 19.1.0 (requires operator 0.9.0, awx.yml file format changed since operator 0.11.0)
+  - 19.2.1
