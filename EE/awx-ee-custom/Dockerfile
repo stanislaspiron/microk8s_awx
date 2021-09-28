@@ -1,4 +1,4 @@
-FROM quay.io/ansible/awx-ee:0.1.1
+FROM quay.io/ansible/network-ee:stable-2.11
 
 USER root
 
