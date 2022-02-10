@@ -1,5 +1,14 @@
 # Configure Dynamic NFS storage Class
 
+## Install nfs-common package on kubernetes server(s)
+
+```
+sudo apt install nfs-common
+```
+
+## Deploy NFS deployment
+
+
 **Create RBAC roles to configure persistent volumes**
 
 ```
