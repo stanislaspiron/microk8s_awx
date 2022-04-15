@@ -9,7 +9,7 @@ metadata:
   namespace: kube-system
 spec:
   rules:
-  - host: microk8s.demo.local
+  - host: kube-lab.demo.local
     http:
       paths:
       - path: /
