@@ -1,0 +1,9 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWXBackup
+metadata:
+  name: awxbackup-2022-04-21
+  namespace: default
+spec:
+  deployment_name: tower
+  backup_storage_class: 'nfs-storageclass'
