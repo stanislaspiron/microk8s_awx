@@ -3,6 +3,7 @@ apiVersion: awx.ansible.com/v1beta1
 kind: AWX
 metadata:
   name: tower
+    #  namespace: awx
 spec:
   hostname: tower.demo.local
   image: quay.io/ansible/awx
@@ -10,5 +11,7 @@ spec:
   image_pull_policy: Always
   admin_user: admin
   ingress_type: Ingress
+  ingress_tls_secret: tower-secret-tls
   ingress_annotations: |
       kubernetes.io/ingress.class: public
+  postgres_storage_class: nfs-storageclass
