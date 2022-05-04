@@ -4,6 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: awx-ee
 spec:
+  storageClassName: "nfs-storageclass"
   accessModes:
     - ReadWriteMany #  must be the same as PersistentVolume
   resources:
