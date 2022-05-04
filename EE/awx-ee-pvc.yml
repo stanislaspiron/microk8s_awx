@@ -3,6 +3,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: awx-ee
+  namespace: awx
 spec:
   storageClassName: "nfs-storageclass"
   accessModes:
