@@ -32,6 +32,6 @@ sudo update-ca-certificates --fresh -v
 2. Configure containerd to use System trusted store
 
 ```
-echo  'CACERT=/etc/ssl/certs/ca-certificates.crt' >> cat /var/snap/microk8s/current/args/containerd-env
+echo  'CACERT=/etc/ssl/certs/ca-certificates.crt' >> /var/snap/microk8s/current/args/containerd-env
 sudo snap restart microk8s
 ```
