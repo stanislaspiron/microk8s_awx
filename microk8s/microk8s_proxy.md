@@ -20,3 +20,18 @@ When enabling proxy configuration, you should at least exclude 10.152.183.0/24 n
 ```
 NO_PROXY=10.1.0.0/16,10.152.183.0/24
 ```
+
+## accept SSL interception CA
+
+If the proxy inspect TLS traffic, you must :
+1. add certificate to Syteme trusted store
+```
+sudo cp <certFile.crt> /usr/local/share/ca-certificates/
+sudo update-ca-certificates --fresh -v
+```
+2. Configure containerd to use System trusted store
+
+```
+echo  'CACERT=/etc/ssl/certs/ca-certificates.crt' >> cat /var/snap/microk8s/current/args/containerd-env
+sudo snap restart microk8s
+```
